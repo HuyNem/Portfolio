@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="https://unpkg.com/feather-icons"></script>
+<title>Portfolio Profile</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+        <img onclick="displayList()" src="./assets/image/align-justify.svg" alt="" class="header-list">
+        <div id="list-none" class="list-none">
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+        </div>  
+    </nav>
+    <header class="profile-header">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      <img src="assets/image/avatar.jpg" alt="Profile Picture" class="header-avatar">
+      <h1>Dao Ngoc Huy</h1>
+      <p>Front-end Developer</p>
+    </header>
+
+    <section id="introduction" class="section introduction">
+      <h2 class="section-title">Introduction</h2>
+      <p>Hello! I'm Huy, a Front-end developer with over 5 years of experience in creating dynamic and responsive web applications. 
+        I have a strong background in both front-end and back-end development, 
+        and I love working on projects that challenge my skills and creativity.</p>
+    </section>
+
+    <section id="skills" class="section skills">
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Boostrap, Material, Ant</li>
+        <li>ReactJs, React Native</li>
+        <li>Node.js, Express</li>
+        <li>Python</li>
+        <li>SQL, NoSQL</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="section experience">
+      <h2 class="section-title">Work Experience</h2>
+      <ul>
+        <li>
+          <h3>Senior Developer at Tech Company</h3>
+          <p>January 2020 - Present</p>
+          <p>Developed and maintained web applications, collaborated with cross-functional teams, and implemented new features based on client feedback.</p>
+        </li>
+        <li>
+          <h3>Web Developer at Another Company</h3>
+          <p>June 2017 - December 2019</p>
+          <p>Worked on front-end and back-end development for various projects, ensuring high performance and responsiveness of applications.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="education" class="section education">
+      <h2 class="section-title">Education</h2>
+      <ul>
+        <li>
+          <h3>Bachelor of Information Technology</h3>
+          <p>Hanoi University of Civil Engineering, 2020 - 2024</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2 class="section-title">Projects</h2>
+      <ul>
+        <li>
+          <h3>Project One</h3>
+          <p>A web application that allows users to track their daily tasks. Built with React and Node.js.</p>
+          <a href="https://project-one.com">View Project</a>
+        </li>
+        <li>
+          <h3>Project Two</h3>
+          <p>An e-commerce website with a custom CMS. Developed using Django and Vue.js.</p>
+          <a href="https://project-two.com">View Project</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: daogiahuy2002@gmail.com</p>
+      <p>Phone: +84 924 626 163</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
+    </section>
+  </div>
+
+  <script>
+    let isDisplay = false;
+    function displayList() {
+        isDisplay =!isDisplay;
+        if (!isDisplay) {
+            document.getElementById("list-none").className = "list-none";
+        } else {
+            document.getElementById("list-none").className = "list-display";
+        }
+    }
+  </script>
+</body>
+</html>
